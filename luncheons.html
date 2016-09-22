@@ -1,0 +1,288 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Navigation menus</title>
+		<meta charset="utf-8">
+	
+		<style>
+		header{
+				border-bottom-color:#800000;
+				border-bottom-style:solid;
+				padding-left:30px;
+				padding-left:50px;
+				padding-top: 1.5em;
+				padding-bottom:2em;
+				background-image: linear-gradient(30deg,#f6bb73 0%,#f6bb73 30%,white 50%,#f6bb73 80%,#f6bb73 0%);
+				height:100px;
+			}
+		header img {
+				float: left;
+				margin-right: 1em;
+				float:left;
+			}
+		div{
+			float:left;
+		}
+			header h2 {
+				margin-bottom: 0;
+				color:#800000;
+				font-size:170%;
+				
+				
+			}
+			header h3 {
+				margin-top: .5em;
+				font-size:130%;
+				font style:italic;
+				
+			}
+		body {
+			width:800px;
+			background-color: white;
+			margin: 0 auto;
+			border: 3px solid #800000; 
+			
+		}
+		
+
+		h2 { 
+			font-size: 125%;
+		
+			clear: both;
+		}
+
+		nav {
+			weight:800px;
+		
+		}
+		#nav_menu ul {
+			list-style: none;
+			position: relative;    
+		}
+		#nav_menu ul li {
+			float: left;
+		}
+		#nav_menu ul ul {
+			display: none;         
+			position: absolute;
+			top: 100%;             
+		}
+		#nav_menu ul ul li {
+			float: none;          
+		}
+		#nav_menu ul li:hover > ul {
+			display: block;       
+		}
+		#nav_menu > ul::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		
+		#nav_menu ul {
+			margin: 0;
+			padding: 0;
+		}
+		#nav_menu ul li a {
+			text-align: center;
+			display: block;
+			width: 160px;
+			padding: 1em 0;
+			text-decoration: none;
+			background-color: #800000;
+			color: white;
+			font-weight: bold;
+		}
+		#nav_menu ul li.lastitem a {
+			width: 160px;               
+		}
+	
+		
+		main {
+			width: 525px;
+			margin-right:20px;
+			float:right;
+		
+		}
+			#img{
+			float: right;
+			margin-left:30px;
+		}
+		main h2{
+			color:#800000;
+		}
+				
+		aside {
+			padding-left:30px;
+			width: 215px;
+			float: left;
+			
+		}
+		a:link { 
+			
+				font style:italic;
+		
+			}
+		
+		footer {
+			
+			clear: both;
+			background:#800000;
+			text-align:center;
+			color:white;
+			padding-bottom:1em;
+			padding-top:1em; 
+		}	
+					
+			table {
+				border-collapse: collapse;
+			}
+			thead, tfoot {
+				border-top: 2px solid #800000;
+				border-bottom: 2px solid #800000;
+			}
+			th, td {
+				padding: .2em .7em;
+				text-align: left;
+			}
+			tfoot th, tfoot td {
+				text-align: right;
+				font-weight: bold;
+			}
+			.border_bottom {
+				border-bottom: 2px solid #800000;
+			}
+			.right {
+				text-align: right;
+			}
+			main p,h2{
+			padding:0 auto;}
+
+</style>
+	</head>
+    <body>
+		<header>
+		 <img src="C:\Users\Trang\Desktop\^^\exercises\town_hall_1\images\town_hall_logo.gif"  alt="town_hall_logo" height="80"/>
+		<div><h2 style="color:#800000;">San Joaquin Valley Town Hall</h2>
+		<h3>Celebrating our <em style="text-shadow:2px 2px 2px #800000;color:black;" >75<sup>th</sup></em> Year </h3></div>
+		</header>
+	
+   		<nav id="nav_menu">
+    		<ul>
+    			<li><a href="index.html" class="current">Home</a></li>
+            	<li><a  href="#">Speakers</a>
+                    <ul>
+                        <li><a href="#">Jeffrey Toobin</a></li>
+                        <li><a href="#">Andrew Ross Sorkin</a></li>
+                        <li><a href="#">Amy Chua</a></li>
+                        <li><a href="toobin.html">Scott Sampson</a></li>
+                    </ul>
+            	</li>
+                <li><a href="members.html" >Luncheons</a></li>
+				<li><a href="ticket.html">Tickets</a>
+    			<li class="lastitem"><a href="aboutus.html">About Us</a>
+            		<ul>
+                		<li><a href="#">Our History</a></li>
+                    	<li><a href="#">Board of Directors</a></li>
+                    	<li><a href="#">Past Speakers</a></li>    
+                    	<li><a href="#">Contact Information</a></li>
+                	</ul>    				
+    			</li>         
+    		</ul>
+    	</nav>
+	<main> 
+			<h2 style="color:black;">About Our Luncheons</h2>
+			<p>Make reservations for lunch in the lower lobby of the William Saroyan Theater after each lecture. 
+			These informal sessions provide an excellent opportunity to talk with the speaker.</p>
+			<h2>Season luncheon tickets: $120</h2>
+			<p>These tickets can be ordered at the same time as the season lecture ticket.</p>
+			<h2>Individual luncheon tickets: $25</h2>
+			<p>A limited number of these tickets are available and can be purchased by calling 
+			559.555.1212. These tickets must be purchased by the Friday prior to the lecture.</p>
+			<h2>The luncheon schedule</h2>
+		
+		<table>
+				<thead>
+					<tr>
+						<th>Year</th>
+						<th>Date</th>
+						<th>Speaker</th>
+						<th>Cost</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="2">2015</td>
+						<td>October 19</td>
+						<td>Jeffrey Toobin</td>
+						<td class="right">$25</td>
+					</tr>
+					<tr class="border_bottom">
+						<td>November 16</td>
+						<td>Andress Ross Sorkin</td>
+						<td class="right">$25</td>
+					</tr>
+					<tr>
+						<td rowspan="4">2016</td>
+						<td>January 18</td>
+						<td>Amy Chua</td>
+						<td class="right">$25</td>
+					</tr>
+					<tr>
+						<td>February 16</td>
+						<td>Scott Sampson</td>
+						<td class="right">$25</td>
+					</tr>
+					<tr>
+						<td>March 21</td>
+						<td>Carlos Eire</td>
+						<td class="right">$25</td>
+					</tr>
+					<tr class="border_bottom">
+						<td>April 18</td>
+						<td>Ronan Tynan</td>
+						<td class="right">$25</td>
+					</tr>
+					<tr>
+						<th colspan="3" class="right">Cost of 6 individual luncheon tickets</th>
+						<td>$150</td>
+					</tr>
+					<tr class="border_bottom">
+						<th colspan="3" class="right">Cost of a season luncheon ticket</th>
+						<td>$120</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th colspan="3">Savings</th>
+						<td>$30</td>
+					</tr>
+				</tfoot>
+			</table>
+
+
+
+			
+	</main>
+    <aside><b>
+	<h2 style="color:#800000;"><b>Guest speakers</b></h2>
+			<p>October<br>
+			<a href="speakers/toobin.html">Jeffrey Toobin</a>.</p>
+			<img src="C:\Users\Trang\Desktop\^^\exercises\town_hall_1\images\toobin75.jpg"  alt="toobin75" height="80"/>
+			<p>November<br>
+			<a href="speakers/sorkin.html">Andrew Ross Sorkin</a>.</p>
+			<img src="C:\Users\Trang\Desktop\^^\exercises\town_hall_1\images\sorkin75.jpg"  alt="sorkin75" height="80"/>
+			<p>January<br>
+			<a href="speakers/chua.html Chua">Amy Chua</a>.</p>
+			<img src="C:\Users\Trang\Desktop\^^\exercises\town_hall_1\images\chua75.jpg"  alt="chua75" height="80"/>
+			<p>February<br>
+			<a href="speakers/chua.html Chua">Scott Sampson</a>.</p>
+			<img src="C:\Users\Trang\Desktop\^^\exercises\town_hall_1\images\sampson75.jpg"  alt="chua75" height="80"/>
+	</b></aside>
+		<footer >
+		<p>&copy; Copyright 2015 San Joaquin Valley Town Hall.</p>
+		</footer>
+    </body>
+</html>
